@@ -3,7 +3,8 @@
 import random
 
 game_state = {
-    "starting_ location" : "The Tavern", #Come up with a cool name later
+    "starting location" : "The Tavern", #Come up with a cool name later
+    "current location" : None,
     "inventory" : ["Sword", "Shield", "2 Potion of Healing"],
     "health" : 100,
     "gold" : 15,
@@ -16,7 +17,12 @@ dm_responses = {
     }
 }
 
-global_actions = {}
+global_actions = {
+    "show inventory" : print(game_state["inventory"]),
+    "show health" : print(game_state["health"]),
+    "show gold" : print(game_state["gold"]),
+    "show location" : print(game_state["current location"])
+}
 
 # Main Game Actions
 tavern_actions = {
