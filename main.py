@@ -1,5 +1,4 @@
 #This is the initial file for this project - Date: 6/27/25
-
 import random
 
 game_state = {
@@ -24,7 +23,6 @@ global_actions = {
     "show location" : print(game_state["current location"])
 }
 
-# Main Game Actions
 tavern_actions = {
     "look" : "The tavern is dimly lit, filled with the smell of ale and woodsmoke. A burly bartender polishes glasses behind the bar. In the corner, a hooded figure sits alone. Stairs lead up to the inn rooms to the right of the bar counter. Your trusty old traveling pack rests against your chair, worn from years of use. Various hunting trophies line the walls of the tavern, and a faded painting of a castle on the coastline hangs crooked near the door.",
 
@@ -48,19 +46,13 @@ tavern_actions = {
 }
 
 # Transition scene to front gate of castle
-'''
 no_map_front_transition = "You finish your ale, leaving a few coins on the scarred wooden table. The bartender gives you a knowing nod as you adjust your pack and head for the door. 'Good luck out there,' he calls. 'Remember - follow the north road. Can't miss it.' The cool night air hits you as you step outside, carrying the salt tang of the distant sea. The cobblestone streets of town quickly give way to a dirt road leading north, just as the bartender described. As you walk, the sounds of the tavern fade behind you, replaced by the whisper of wind through tall grass and the distant crash of waves against cliffs. After about an hour's trek, the road begins to climb. The moon breaks through the clouds, and there it is - Moorwall Castle, perched on the cliff's edge like a great stone bird of prey. Even in its abandoned state, it's imposing. Dark windows stare down at you like hollow eyes. You follow the road right up to the main gate - a massive wooden door reinforced with rusted iron bands. Heavy chains and an ancient padlock bar your way. But something feels off... the dust around the gate has been disturbed recently. You're not the first person to come here."
 
 map_found_front_transition = "You finish your ale, leaving a few coins on the scarred wooden table. The bartender gives you a knowing nod as you adjust your pack and head for the door. 'Good luck out there,' he calls. 'Remember - follow the north road. Can't miss it.' The cool night air hits you as you step outside, carrying the salt tang of the distant sea. The cobblestone streets of town quickly give way to a dirt road leading north, just as the bartender described. As you walk, the sounds of the tavern fade behind you, replaced by the whisper of wind through tall grass and the distant crash of waves against cliffs. After about an hour's trek, the road begins to climb. The moon breaks through the clouds, and there it is - Moorwall Castle, perched on the cliff's edge like a great stone bird of prey. Even in its abandoned state, it's imposing. Dark windows stare down at you like hollow eyes. You follow the road right up to the main gate - a massive wooden door reinforced with rusted iron bands. It's exactly as your father's map described: 'Sealed by order of the Lord.' Indeed, heavy chains and an ancient padlock bar your way. But something feels off... the dust around the gate has been disturbed recently. You're not the first person to come here. Time to find that hidden switch the map mentioned. But where would someone hide such a mechanism?"
 
-
-'''
-
 castle_front_actions = {
 
 }
-
-
 
 castle_cellar_actions = {}
 castle_courtyard_actions = {}
